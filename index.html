@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="img/png" href="logo.ico">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ESTUDIO JURIDICO</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <img src="logo.jpg" class="imgLogo" />
+
+
+
+      <h1 class="formulario__titulo">Video demostración</h1>
+
+      <div style="text-align:center;" ><iframe width="250" height="150" src="https://www.youtube.com/embed/mr1NnzxMPYY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+      <h1 class="formulario__titulo">ESTUDIO JURIDICO</h1>
+      <h3 class="formulario__subtitulo">CONSULTAS</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para agendar tu cita.
+      </p>
+
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu nombre completo"
+      />
+
+
+      
+
+      <label for="empleado" class="formulario__label"
+      >Seleccione su caso/consulta.</label
+    >
+    <select id="empleado" name="listaempleados" class="formulario__input">
+      <option>Laboral</option>
+      <option>Civil</option>
+      <option>Familia</option>
+      <option>Previsional</option>
+      <option>Comercial</option>
+      <option>Gestoria</option>
+      <option>Otro</option>
+    </select>
+
+    <p class="formulario__parrafo">LABORAL: Despidos, trabajo en negro, accidentes de trabajo, diferencias salariales,despidos por embarazos.</p>
+      <p class="formulario__parrafo">CIVIL Y COMERCIAL: Accidentes de tránsito, contratos de locación, sucesiones,incumplimiento de trabajo.</p>
+      <p class="formulario__parrafo">FAMILIA: Divorcios, comunicación con hijos, liquidación sociedad conyugal, determinación de capacidad.</p>
+      <p class="formulario__parrafo">PREVISIONAL: Jubilaciones, pensiones, retiros por invalidez, moratorias, reajustes previsionales.</p>
+
+
+    
+      <label for="fecha" class="formulario__label"
+        >Indica la fecha de tu reserva</label
+      >
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+
+      <label for="hora" class="formulario__label"
+        >Indica la hora de tu reserva</label
+      >
+      <input id="hora" type="time" class="formulario__input" />
+
+
+
+      <p class="formulario__parrafo">Para que podamos tomar tu consulta realiza el pago en el siguiente boton, Luego realice el envio del formulario junto con el comprobante del pago</p>
+
+      <a href="https://mpago.la/1iYMTDw" target="_blank"><img src="mercado.png" alt="Los Tejos" /></a>
+
+      <p class="formulario__parrafo">Esta pagina fue creada por Alan Ivan Acosta con el fin de muestra para ventas.</p>
+  
+
+
+     
+
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
